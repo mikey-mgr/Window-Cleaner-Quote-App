@@ -70,14 +70,6 @@ This is a static Vite build. After `npm run build`, upload the `dist/` folder to
 - GitHub Pages
 - Cloudflare Pages
 
-## Environment Variables (Optional)
-
-If you are using Base44 services:
-```
-VITE_BASE44_APP_ID=your_app_id
-VITE_BASE44_APP_BASE_URL=your_backend_url
-```
-
 ## License
 
 Private/internal project unless otherwise specified.

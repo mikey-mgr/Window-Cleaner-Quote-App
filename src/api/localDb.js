@@ -273,6 +273,5 @@ const fallbackDb = {
   }
 };
 
-export const db = globalThis.__B44_DB__ || fallbackDb;
-export const base44 = db;
+export const db = fallbackDb;
 export default db;

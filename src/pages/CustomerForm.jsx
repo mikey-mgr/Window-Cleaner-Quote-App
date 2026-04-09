@@ -1,4 +1,4 @@
-import db from '@/api/base44Client';
+import db from '@/api/localDb';
 
 import { useState, useEffect, useMemo } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
@@ -285,3 +285,4 @@ export default function CustomerForm() {
     </div>
   );
 }
+

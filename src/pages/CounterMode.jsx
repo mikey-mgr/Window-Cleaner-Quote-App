@@ -1,4 +1,4 @@
-import db from '@/api/base44Client';
+import db from '@/api/localDb';
 
 import { useParams, useNavigate } from 'react-router-dom';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
@@ -177,3 +177,4 @@ export default function CounterMode() {
     </div>
   );
 }
+

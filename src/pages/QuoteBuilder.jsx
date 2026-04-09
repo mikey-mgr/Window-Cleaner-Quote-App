@@ -1,4 +1,4 @@
-import db from '@/api/base44Client';
+import db from '@/api/localDb';
 
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -107,3 +107,4 @@ export default function QuoteBuilder() {
     </div>
   );
 }
+

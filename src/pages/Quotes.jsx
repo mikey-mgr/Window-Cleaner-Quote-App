@@ -1,4 +1,4 @@
-import db from '@/api/base44Client';
+import db from '@/api/localDb';
 
 import { useState, useEffect } from 'react';
 import { useQuery, useQueryClient } from '@tanstack/react-query';
@@ -109,3 +109,4 @@ export default function Quotes() {
     </div>
   );
 }
+

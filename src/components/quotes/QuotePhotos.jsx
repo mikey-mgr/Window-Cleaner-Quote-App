@@ -1,4 +1,4 @@
-import db from '@/api/base44Client';
+import db from '@/api/localDb';
 
 import { useEffect, useState } from 'react';
 
@@ -72,3 +72,4 @@ export default function QuotePhotos({ quote, onUpdate }) {
     </div>
   );
 }
+

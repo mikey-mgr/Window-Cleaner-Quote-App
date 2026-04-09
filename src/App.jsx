@@ -13,7 +13,7 @@ import { useEffect, useRef } from 'react';
 import { toast } from 'sonner';
 import { getNeighborhoodMultiplier } from '@/lib/neighborhoodMultipliers';
 import { calcGrandTotal } from '@/lib/quoteUtils';
-import db from '@/api/base44Client';
+import db from '@/api/localDb';
 
 import AppLayout from './components/layout/AppLayout';
 import Dashboard from './pages/Dashboard';
@@ -204,3 +204,4 @@ function App() {
 }
 
 export default App
+
