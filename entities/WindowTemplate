@@ -1,0 +1,26 @@
+{
+  "name": "WindowTemplate",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of the window type (e.g., French Door, Standard Pane)"
+    },
+    "description": {
+      "type": "string",
+      "description": "Short description of the window type"
+    },
+    "base_price": {
+      "type": "number",
+      "description": "Default base price in USD"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "URL of the window template image"
+    }
+  },
+  "required": [
+    "name",
+    "base_price"
+  ]
+}

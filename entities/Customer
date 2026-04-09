@@ -1,0 +1,56 @@
+{
+  "name": "Customer",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Customer full name"
+    },
+    "address": {
+      "type": "string",
+      "description": "Physical address"
+    },
+    "neighborhood": {
+      "type": "string",
+      "enum": [
+        "Borrowdale",
+        "Mount Pleasant",
+        "Avondale",
+        "Highlands",
+        "Greendale",
+        "Marlborough",
+        "Hatfield",
+        "Emerald Hill",
+        "Belgravia",
+        "Gunhill",
+        "Chisipite",
+        "Glen Lorne",
+        "Helensvale",
+        "Pomona",
+        "Greystone Park",
+        "Mandara",
+        "Mabelreign",
+        "Waterfalls",
+        "Southerton",
+        "Other"
+      ],
+      "description": "Harare neighborhood"
+    },
+    "phone": {
+      "type": "string",
+      "description": "Phone number (WhatsApp linkable)"
+    },
+    "email": {
+      "type": "string",
+      "description": "Email address"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Special notes (e.g., Aggressive dogs, High ladder needed)"
+    }
+  },
+  "required": [
+    "name",
+    "phone"
+  ]
+}

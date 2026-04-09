@@ -1,0 +1,103 @@
+{
+  "name": "Quote",
+  "type": "object",
+  "properties": {
+    "customer_id": {
+      "type": "string",
+      "description": "ID of the linked customer"
+    },
+    "customer_name": {
+      "type": "string",
+      "description": "Cached customer name"
+    },
+    "customer_address": {
+      "type": "string",
+      "description": "Cached customer address"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "sent",
+        "in_progress",
+        "completed",
+        "paid"
+      ],
+      "default": "draft",
+      "description": "Quote workflow status"
+    },
+    "line_items": {
+      "type": "array",
+      "description": "Window units in this quote",
+      "items": {
+        "type": "object",
+        "properties": {
+          "template_id": {
+            "type": "string"
+          },
+          "template_name": {
+            "type": "string"
+          },
+          "template_image": {
+            "type": "string"
+          },
+          "quantity": {
+            "type": "number"
+          },
+          "unit_price": {
+            "type": "number"
+          },
+          "difficulty": {
+            "type": "string",
+            "enum": [
+              "normal",
+              "heavy_grime",
+              "second_story"
+            ]
+          },
+          "multiplier": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "neighborhood_discount": {
+      "type": "number",
+      "description": "Discount percentage for neighborhood"
+    },
+    "photos": {
+      "type": "array",
+      "description": "Before/after photo URLs",
+      "items": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string",
+            "enum": [
+              "before",
+              "after"
+            ]
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "notes": {
+      "type": "string",
+      "description": "Additional quote notes"
+    },
+    "grand_total": {
+      "type": "number",
+      "description": "Calculated grand total"
+    }
+  },
+  "required": [
+    "customer_id",
+    "status"
+  ]
+}
